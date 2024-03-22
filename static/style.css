@@ -1,0 +1,63 @@
+#typedText {
+    color: blue; /* Change font color to blue */
+    font-size: 40px; /* Increase font size */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    position: relative
+}
+.center{
+    position: absolute;
+    top: 50px;
+    left:370px
+}
+.input {
+    height: 200px;
+    width: 900px;
+    font-size: 20px; /* Increased font size */
+    padding-top: 20px; /* Add padding to the top */
+}
+
+.maincent {
+    position: relative; /* Relative positioning to contain absolute positioned elements */
+    margin-top: 10%;
+    height: 500px;
+    width: 100%;
+}
+.text {
+    position: relative; /* Necessary for absolute positioning */
+    height: 100%; /* Make sure the container fills the height */
+}
+
+.left,
+.right,
+.center1 {
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to the top */
+}
+
+img {
+    height: 200px; /* Height of the image */
+    width: 200px; /* Width of the image */
+}
+
+.left {
+    left: 50px; /* Align to the left */
+    top: 120px;
+}
+
+.input {
+    height: 200px;
+    width: 900px;
+    font-size: 16px;
+}
+
+.center1 {
+    left: 380px;
+    top: 120px;
+}
+
+.right {
+    right: 50px; /* Align to the right */
+    top: 120px;
+}

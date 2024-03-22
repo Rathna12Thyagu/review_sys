@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const text = "Write Your Review Here";
+            let timer;
+            let i = 0;
+            function type() {
+                document.getElementById("cent").innerHTML += '<span id="typedText">' + text[i] + '</span>';
+                i++;
+                if (i >= text.length) 
+                    clearInterval(timer);
+            }
+            timer = setInterval(type, 200);
+        </script>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+        <div class="main">
+            <div class="center" id="cent"></div> <!-- Moved the script tag content here -->
+            <div class="maincent">
+            <div class="text">
+                <div class="left">
+                    <img src="{{url_for('static', filename='cork.jpg')}}"/>
+                </div>
+                <div class="center1">
+                    <form action='/result' method="post">
+                    <input type="text" name='review' class="input"/>
+                    <button type="submit">submit</button>
+                    </form>
+                </div>
+                <div class="right">
+                    <img src="{{url_for('static', filename='cork1.jpg')}}"/>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
